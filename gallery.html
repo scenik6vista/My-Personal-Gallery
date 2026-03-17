@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <script src="gallery.js"></script>
+</head>
+
+<body onload="addTabIndex()">
+
+    <header class="titlehead">
+        <h1>Interactive JavaScript Gallery</h1>
+    </header>
+
+    <main class="container">
+        <div id="image">
+            Hover over an image below to display here.
+        </div>
+
+        <div class="previmg">
+            <img class="preview" alt="Let's Take a Look." 
+                 src="https://media.tenor.com/5wH2cBJvtEMAAAAM/let%27s-take-a-look-lets-take-a-look.gif" 
+                 onmouseover="upDate(this)" onmouseout="unDo()" 
+                 onfocus="upDate(this)" onblur="unDo()">
+
+            <img class="preview" alt="She was so happy to sell a house." 
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRommcqpkmBA9qKhimU9tDjdi7uy27-XlblcA&s" 
+                 onmouseover="upDate(this)" onmouseout="unDo()" 
+                 onfocus="upDate(this)" onblur="unDo()">
+
+            <img class="preview" alt="Frutiger Aero" 
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG3BobozZRRWYW3ojeOmWeltaVHMtfh2Sing&s" 
+                 onmouseover="upDate(this)" onmouseout="unDo()" 
+                 onfocus="upDate(this)" onblur="unDo()">
+
+            <img class="preview" alt="Meg in a weird bicycle." 
+                 src="https://pbs.twimg.com/media/GxalgHrWkAAm6-W.png" 
+                 onmouseover="upDate(this)" onmouseout="unDo()" 
+                 onfocus="upDate(this)" onblur="unDo()">
+
+            <img class="preview" alt="Listen to Natanya!" 
+                 src="https://i.scdn.co/image/ab67616d00001e027339c4a39d0b00d8d6768761" 
+                 onmouseover="upDate(this)" onmouseout="unDo()" 
+                 onfocus="upDate(this)" onblur="unDo()">
+
+            <img class="preview" alt="DAH!" 
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwIdwLwAfPHdZqSO2Oehm1y-lZ5VJoe1xeDQ&s" 
+                 onmouseover="upDate(this)" onmouseout="unDo()" 
+                 onfocus="upDate(this)" onblur="unDo()">
+        </div>
+    </main>
+
+</body>
+</html>
