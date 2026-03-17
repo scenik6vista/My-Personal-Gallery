@@ -1,0 +1,47 @@
+.titlehead {
+    margin: 20px auto; /* Added some top margin for breathing room */
+    font-family: cursive;
+    width: 100%;
+    max-width: 535px;
+    text-align: center;
+}
+
+#image {
+    line-height: 650px;
+    width: 95%; /* Use percentage so it doesn't overflow small screens */
+    max-width: 575px; /* Keeps it from getting too huge on desktops */
+    height: 650px;
+    border: 5px solid black;
+    margin: 0 auto 25px auto;
+    background-color: #8e68ff;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-position: center; /* Ensures the image is centered in the box */
+    background-size: cover; /* "Cover" is usually better than 100% for photo galleries */
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 150%;
+}
+
+.previmg {
+    display: flex;
+    flex-wrap: wrap; /* IMPORTANT: This allows images to wrap to a new line on small screens */
+    justify-content: center; /* Centers the row of images */
+    gap: 15px; /* Creates even spacing between the thumbnails */
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.preview {
+    width: 100px;
+    height: 100px; /* Making them square makes the gallery look professional */
+    object-fit: cover; /* Ensures photos don't look "squished" */
+    border: 7.5px solid black;
+    cursor: pointer;
+}
+
+/* This covers your accessibility requirement perfectly */
+.preview:focus, .preview:hover {
+    border-color: #FFFFFF; /* White border looks sharp against the purple/black */
+    outline: 3px solid #8e68ff; /* Adds an extra ring for high visibility */
+}
